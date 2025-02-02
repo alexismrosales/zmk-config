@@ -20,11 +20,15 @@
             then-layer = <3>;
         };
     };
-    td_alt: td {
-        compatible = "zmk,behavior-tap-dance";
-        #binding-cells = <2>;
-        bindings = <&kp LALT>, <&kp RALT>;  // ← Tap: LALT, Double Tap: RALT
+
+    behaviors {
+        td_alt: td {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <2>;
+            bindings = <&kp LALT>, <&kp RALT>;  // Tap: LALT, Double Tap: RALT
+        };
     };
+
     keymap {
         compatible = "zmk,keymap";
 
