@@ -18,8 +18,9 @@
     behaviors {
         td_alt: td {
             compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;  // ← Corregido: ZMK espera `<0>` aquí
-            bindings = <&kp LALT>, <&kp RALT>;  // Tap: LALT, Double Tap: RALT
+            #binding-cells = <0>;  
+            tapping-term-ms = <200>;
+            bindings = <&kp LALT>, <&kp RALT>;
         };
     };
 
